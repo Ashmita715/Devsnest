@@ -1,0 +1,37 @@
+body{
+    background-color: tomato;
+}
+.center{
+    width: 400px;
+    margin: 0 auto;
+}
+input{
+    font-size: 2em;
+}
+h1{
+    color: darkviolet;
+}
+#plusButton{
+    background-color: chartreuse;
+    color: black;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#minusButton{
+    background-color: burlywood;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkorchid;
+}
+#mulButton{
+    background-color: deeppink;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslateblue;
+}
+#divButton{
+    background-color: lightcoral;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: olive;
+}
