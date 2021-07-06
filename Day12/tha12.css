@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #659999;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1{
+    background-color: yellowgreen;
+    padding: 10px;
+    color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#app{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    width: 50%;
+    background-color: thistle;
+}
+.fa-plus{
+    float: right;
+}
+#todo-input{
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #fff;
+    box-sizing: border-box;]
+    background-color: #f7f7f7;
+}
+#todo-input:focus{
+outline: none;
+border: 2px solid thistle;
+background-color: #fff;
+}
+li{
+    list-style: none;
+    padding: 10px 18px;
+}
+span{
+    background-color: tomato;
+    padding: 10px;
+    color: #fff;
+    display: none;
+    margin-right: 20px;
+}
+li:hover span{
+    display: inline;
+}
+li:hover{
+    padding: 9px 0px;
+}
