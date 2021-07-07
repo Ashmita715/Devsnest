@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    min-height: 100vh;
+    text-align: center;
+    padding: 100px;
+}
+.container{
+    background: linear-gradient(to left, #ff7300, #ff99cc);
+    width: 80vw;
+    padding: 40px;
+    height: 55vh;
+    border-left: 3px solid lightcoral;
+}
+.quote-text{
+    min-height: 20vh;
+}
+.container h1{
+    font-size: 50px;
+    text-align: left;
+}
+.container p{
+    text-transform: capitalize;
+    color: maroon;
+    text-align: right;
+    font-style: italic;
+    font-size: 30px;
+}
+#btn{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #191716;
+    color: mediumturquoise;
+    text-transform: uppercase;
+    
+}
+#btn:hover{
+    color: #191716;
+    background-color: mediumturquoise;
+}
