@@ -4,7 +4,7 @@ import Card from "./components/Card";
 
 function App(props) {
   return (
-    <div className="App">
+    <div className="app">
       <h1 id="first">Instructions</h1>
       <p>
         <ul>
