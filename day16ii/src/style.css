@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+.App{
+    height: 225px;
+    width: 225px;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 12px solid black;
+}
+.card{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    height: 25px;
+    width: 25px;
+}
+.card1{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    height: 25px;
+    width: 25px;
+}
