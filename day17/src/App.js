@@ -22,8 +22,8 @@ function App(props) {
       <Card title="Fried Rice" cal="90"/>
       <Card title="Lassania" cal="200"/>
       <Card title="Pani Puri" cal="40"/>
-      <Card title="Chocolates" cal="450"/>
-      <Card title="Momos" cal="70"/>
+      <Card title="Noodles" cal="188"/>
+      <Card title="Samosa" cal="250"/>
       </div>
       
     </div>
