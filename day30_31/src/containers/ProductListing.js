@@ -1,31 +1,27 @@
-import React, { useEffect, useCallback, useMemo } from "react";
-import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
-import { setProducts } from "../redux/actions/productsActions";
-import ProductComponent from "./ProductComponent";
+import Card from "./Card";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { loadProducts } from "../productSlice";
 
-const ProductPage = () => {
-  const products = useSelector((state) => state.allProducts.products);
+const ProductListing = () => {
+  const prods = useSelector((state) => state.product.products);
   const dispatch = useDispatch();
-  const fetchProducts = async () => {
-    const response = await axios
-      .get("https://fakestoreapi.com/products")
-      .catch((err) => {
-        console.log("Err: ", err);
-      });
-    dispatch(setProducts(response.data));
-  };
 
   useEffect(() => {
-    fetchProducts();
+    dispatch(loadProducts());
   }, []);
 
-  console.log("Products :", products);
   return (
-    <div className="ui grid container">
-      <ProductComponent />
+    <div className="allCards">
+      {prods.length > 0 ? (
+        prods.map((item) => {
+          return <Card key={item.id} item={item} />;
+        })
+      ) : (
+        <h4>Loading...</h4>
+      )}
     </div>
   );
 };
 
-export default ProductPage;
+export default ProductListing;

@@ -1,14 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import store from "./redux/store";
+import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
+import productSlice from "./productSlice";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+const store = configureStore({
+  reducer: {
+    product: productSlice,
+  },
+});
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
