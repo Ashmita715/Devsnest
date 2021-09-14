@@ -1,0 +1,10 @@
+var fs = require("fs");
+fs.mkdirSync('backend day5'); 
+fs.writeFileSync("backend day5/hello.txt", "Hello everyone", (err) => {
+... if(err) {
+..... console.log(err);
+..... }
+... });
+fs.appendFileSync("backend day5/hello.txt"," appended");
+fs.readFileSync("backend day5/hello.txt", "utf-8");
+fs.renameSync("backend day5/hello.txt", "backend day5/helloo.txt");
